@@ -1,4 +1,4 @@
-"""# 1.Регистрация нового пользователя
+# 1.Регистрация нового пользователя
 import time
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.by import By
@@ -19,9 +19,9 @@ password.click()
 time.sleep(2)
 password.send_keys("phz077BPL")
 register = driver.find_element_by_css_selector(".woocomerce-FormRow.form-row>:nth-child(3)").click()
-driver.quit()"""
+driver.quit()
 
-"""# 2.Вход на сайт
+# 2.Вход на сайт
 import time
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.by import By
@@ -43,4 +43,4 @@ login = driver.find_element_by_css_selector(".login>:nth-child(3) .woocommerce-B
 # Проверка присутствия элемента Logout
 wait = WebDriverWait(driver,10)
 logout = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR,".woocommerce-MyAccount-navigation>ul>:nth-child(6)>a")))
-driver.quit()"""
+driver.quit()

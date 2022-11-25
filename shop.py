@@ -1,5 +1,5 @@
 # 1.Отображение страницы товара
-"""import time
+import time
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -24,10 +24,10 @@ html_form = driver.find_element_by_css_selector(".post-181 .woocommerce-LoopProd
 html_5_form = WebDriverWait(driver,10).until(
     EC.text_to_be_present_in_element((By.CSS_SELECTOR,"div#pagewrap"),"HTML5 Forms")
 )
-driver.quit()"""
+driver.quit()
 
 # 2 Количество товара в категории
-"""import time
+import time
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -53,14 +53,14 @@ items_html = len(driver.find_elements_by_class_name("woocommerce-LoopProduct-lin
 print(items_html)
 
 # Или через if
-'''if len(items_html)==3:
+"""if len(items_html)==3:
     print("На странице  3 товара")
 else:
-    print("Ошибка. Количество: "+ str(len(items_html)))'''
-driver.quit()"""
+    print("Ошибка. Количество: "+ str(len(items_html)))"""
+driver.quit()
 
 # 3 Сортировка товаров
-"""import time
+import time
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -96,10 +96,10 @@ if order_by_default_selected is not None:
     print("Селектор выбран от большего к меньшему")
 else:
     print("Селектор неверно")
-driver.quit()"""
+driver.quit()
 
 # 4 Отображени,скидка товара
-"""import time
+import time
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -135,10 +135,10 @@ img_click = driver.find_element_by_css_selector(".attachment-shop_single.size-sh
 # Ожидание и закрытие предпросмотра
 close = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR,"a.pp_close")))
 close_btn = driver.find_element_by_css_selector("a.pp_close").click()
-driver.quit()"""
+driver.quit()
 
 # 5 Поверка цены в корзине
-"""import time
+import time
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -166,11 +166,11 @@ basket = driver.find_element(By.CLASS_NAME,"wpmenucart-contents").click()
 # Проверка отображения стоймости
 wait = WebDriverWait(driver,5)
 subtotal = wait.until(EC.text_to_be_present_in_element((By.CLASS_NAME,"cart-subtotal"),"₹180.00"))
-total = wait.until(EC.text_to_be_present_in_element((By.CLASS_NAME,"order-total"),"₹189.00"))
-driver.quit()"""
+total = wait.until(EC.text_to_be_present_in_element((By.CLASS_NAME,"order-total"),"₹183.60"))
+driver.quit()
 
 # 6 Работа в корзине
-"""import time
+import time
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -214,7 +214,7 @@ coupon = driver.find_element(By.CSS_SELECTOR,".page-content.entry-content .wooco
 coupon_text = coupon.text
 assert coupon_text == "Please enter a coupon code."
 print(coupon_text)
-driver.quit()"""
+driver.quit()
 
 # 7 Покупка товара
 import time
